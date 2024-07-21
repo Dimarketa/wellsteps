@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <style>
+        body {
+            font-family: Averta Demo, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-weight: 500;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .appointment-details,
+        .payment-informations {
+            margin-top: 0px;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        .payment-methods img {
+            margin: 10px 5px;
+            width: 50px;
+        }
+
+        .expiry-cvv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .expiry-cvv div {
+            flex: 1;
+        }
+
+        .expiry-cvv div:first-child {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            text-align: left;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="appay-container">
+        <div class="left-pane">
+            <div id="appay-img">
+                <img src="Images/Rectangle 42.png" alt="Appointment form">
+            </div>
+            <div class="features">
+                <img src="Images/features.png" alt="features">
+            </div>
+        </div>
+        <div id="appay-form">
+            <div id="appay-head">
+                <h1>Make An Appointment With <br> Dr. Priscilla</h1>
+                <a href="dashboard.html"><img id="close" src="Images/hugeicons_cancel-01.png" alt="close"></a>
+            </div>
+            <form action="payment-successful.html" method="get">
+                <div class="appointment-details">
+                    <h2>Appointment Details</h2>
+                    <div id="fullname">
+                        <div>
+                            <p>First Name</p>
+                            <input required type="text" placeholder="Pilate">
+                        </div>
+                        <div>
+                            <p>Last Name</p>
+                            <input required type="text" placeholder="Pontius">
+                        </div>
+                    </div>
+                    <p>Reason for Appointment</p>
+                    <textarea placeholder="State your reasons"></textarea>
+
+                    <div class="payment-information">
+                        <h2>Payment Information</h2>
+                        <p>Consultation Fee: <strong>$20</strong> per hour</p>
+                        <div class="payment-methods">
+                            <img src="Images/card.png" alt="Visa" id="active-pay" class="p-method">
+                            <img src="Images/Debit Card.png" alt="Debit Card" class="p-method" id="difa-logo">
+                            <img src="Images/logos_google-pay (1).png" alt="Google Pay" class="p-method">
+                            <img src="Images/logos_apple-pay.png" alt="Apple Pay" class="p-method">
+                        </div>
+                        <p>Cardholder's Name</p>
+                        <input required type="text" placeholder="Pilate Pontius">
+                        <p>Card Number</p>
+                        <input required type="text" placeholder="0000 0000 0000 0000 0000">
+                        <div class="expiry-cvv">
+                            <div>
+                                <p>Expiry Date</p>
+                                <input required type="text" placeholder="0000/00">
+                            </div>
+                            <div>
+                                <p>CVV</p>
+                                <input required type="text" placeholder="000">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pay-btn">
+                        <input type="submit" id="submit-btn" value="Make an Appointment">
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

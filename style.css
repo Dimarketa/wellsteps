@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e8f1fb;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Averta-Bold", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p,
+a {
+  font-family: Averta Demo, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button,
+#btn {
+  background-color: #1671d9;
+  color: white;
+}
+#head-top {
+  background-color: #092f5b;
+  height: 65px;
+  width: 100%;
+  margin: 0px;
+  color: white;
+  display: grid;
+  grid-template-columns: 78% 10% 5% 7%;
+  position: relative;
+}
+#head-top > p {
+  margin-top: 20px;
+}
+p > a {
+  text-decoration: none;
+  color: white;
+}
+#head-top > p:first-child {
+  margin-left: 50px;
+}
+#hero {
+  height: auto;
+  width: 100%;
+}
+#hero-image {
+  height: fit-content;
+  width: 99%;
+  position: absolute;
+}
+#main-menu {
+  width: 90%;
+  height: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 40px;
+  display: grid;
+  grid-template-columns: 78% 22%;
+}
+#left-side {
+  background-color: white;
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 70% 10% 10% 10%;
+}
+#left-side > div {
+  margin-top: 35px;
+}
+#right-side {
+  background-color: #1671d9;
+  border-radius: 0px 15px 15px 0px;
+}
+#right-side > div {
+  margin-top: 35px;
+  margin-left: 35px;
+}
+div > a {
+  text-decoration: none;
+  color: black;
+}
+#logo {
+  margin-left: 70px;
+}
+#left-side > a {
+  margin-top: 25px;
+}
+#appointment > a {
+  color: white;
+  padding: 10%;
+}
+#on-hero {
+  position: absolute;
+  height: 100px;
+  width: 48%;
+}
+#overlap-hero {
+  position: relative;
+  top: 120px;
+  left: 75px;
+  padding: 10px 10px 40px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+#overlap-ft {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 25% 70%;
+  grid-gap: 5%;
+  color: black;
+}
+#on-hero-img {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+.on-hero-img {
+  margin-top: 30px;
+  border-radius: 50%;
+  border: 3px solid #092f5b;
+  width: 80px;
+  height: 80px;
+}
+#overlap-hero {
+  color: #092f5b;
+}
+#overlap-hero > h1 {
+  font-size: 4rem;
+}
+#join > b {
+  font-size: 1.5rem;
+}
+#overlap-ft-text {
+  margin-left: 20px;
+}
+#overlap-ft-text > p {
+  font-size: 1rem;
+}
+
+#overlap-hero > p {
+  font-size: 1.5rem;
+}
+button {
+  border-radius: 10px;
+  border: none;
+  height: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 1.2rem;
+}
+
+main {
+  position: relative;
+  top: 850px;
+}
+
+#reclaim-btn,
+#therapist-btn,
+#mission,
+#testimonials,
+#community {
+  position: relative;
+  top: 5%;
+  background-color: white;
+  width: 95%;
+  height: auto;
+  padding: 40px 10px 40px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+#inactive-btn {
+  background-color: white;
+  border: 2px solid lightgray;
+  color: lightgray;
+  height: 60px;
+  width: auto;
+  padding: 15px 40px 15px 40px;
+  border-radius: 10px;
+}
+#active-btn {
+  background-color: #1671d9;
+  color: white;
+}
+#reclaim-list,
+#btn-inline,
+#reclaim-title,
+#therapist-title,
+#therapist-list {
+  margin-left: 30px;
+}
+#reclaim-list,
+#therapist-list {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 10%;
+}
+.list {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.list > img {
+  margin-top: 25px;
+}
+/* Therapist details is hiding as default */
+#therapist-btn {
+  display: none;
+}
+/* Mission section */
+#mission-img {
+  width: 100%;
+  height: auto;
+  margin-left: 30px;
+}
+#mission {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+}
+#mission-details {
+  padding-right: 50px;
+}
+#mission-details > h1 {
+  font-size: 2.5rem;
+}
+#mission-details > h2 {
+  font-size: 2rem;
+}
+#tm-list {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#testimonials > p,
+#testimonials > h1 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.tm-item > p,
+.tm-item > img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tm-item > img {
+  margin-top: 20px;
+}
+.tm-item {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
+#test1 {
+  height: 100%;
+}
+#test2 {
+  height: 90%;
+}
+#test3 {
+  height: 70%;
+}
+#com-head {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  vertical-align: middle;
+}
+#community {
+  padding: 40px;
+}
+#community > img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  background-color: #092f5b;
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  position: relative;
+  bottom: 0px;
+  top: 850px;
+}
+#ft-details {
+  display: grid;
+  grid-template-columns: 30% 15% 15% 30%;
+  grid-gap: 3%;
+}
+.social {
+  margin: 30px 30px 30px 0px;
+}
+.ft-title,
+#copyright {
+  color: gray;
+}
+#col-2 > a,
+#col-3 > a {
+  text-decoration: none;
+  color: white;
+  margin-top: 30px;
+  display: block;
+}
+#col-2,
+#col-3 {
+  display: block;
+}
+form {
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+form::focus {
+  border: none;
+}
+#sub,
+#subtn {
+  background-color: white;
+  padding-top: 10px;
+  height: 45px;
+}
+#sub {
+  border-radius: 10px 0px 0px 10px;
+}
+#subtn {
+  border-radius: 0px 10px 10px 0px;
+  background-color: #1671d9;
+}
+#sub1,
+#email {
+  margin-left: 10px;
+  height: 75%;
+  border: none;
+}
+#email {
+  width: 95%;
+}
+#sub1 {
+  background-color: #1671d9;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.email:focus {
+  border: 1px solid white;
+}
+
+#mobile-logo {
+  display: none;
+  margin: 5px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+/* Hamburger menu icon*/
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.hamburger-menu span {
+  height: 4px;
+  width: 30px;
+  background-color: #092f5b;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  background-color: #092f5b;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  border-radius: 0px 0px 10px 0px;
+  z-index: 1000;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+#smedia {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: 32% 32% 32%;
+}
+.mobile-menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* End of hamburger menu */
+
+/* Keyframes for animations */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation classes */
+.float-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.float-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s, transform 1s;
+}
+
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.zoom-out {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: opacity 1s, transform 1s;
+}
+
+.zoom-out.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Initially hidden */
+.hidden {
+  opacity: 0;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="responsiveness.css">
+</head>
+
+<body>
+    <div id="log-container">
+        <div id="log-img">
+            <img src="Images/Login image.png" alt="register">
+        </div>
+        <div id="log-form">
+            <form action="persona.html" method="get">
+                <div id="log-head">
+                    <h1>Welcome Back</h1>
+                    <a href="index.html"><img id="close" src="Images/hugeicons_cancel-01.png" alt="close"></a>
+                </div>
+                <div id="mail">
+                    <p>Email Address</p>
+                    <input required id="log-email" type="email" name="email" id="email">
+                </div>
+                <div id="pw">
+                    <p>Password</p>
+                    <input required type="password" name="password" id="password">
+                </div>
+                <div id="forget-pw">
+                    <a href="forget.html"><b>Forget Password?</b></a>
+                </div>
+                <div id="sbtn">
+                    <input id="submit-btn" type="submit" value="Login">
+                </div>
+            </form>
+            <p id="info">New to wellsteps? <span id="lg"><b><a href="register.html">Register</a></b></span></p>
+            <div id="wslogo-log"><a href="index.html"><img src="Images/logo.png" alt=""></a></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="validate.js"></script>
+</body>
+
+</html>

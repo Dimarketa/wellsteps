@@ -1,0 +1,329 @@
+#reg-container,
+#appay-container {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  display: grid;
+  grid-template-columns: 53% 45%;
+  grid-gap: 2%;
+}
+
+.ptitle {
+  display: block;
+  margin-top: 30px;
+}
+.pinputs {
+  display: grid;
+  grid-template-columns: 15% 83%;
+  grid-gap: 2%;
+  width: 100%;
+}
+.pselect {
+  background-color: #e8e9e9;
+}
+#log-container,
+#ps-container,
+#fp-container,
+#welc-container {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2%;
+}
+#welc-head,
+#sel,
+#desc {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+#appay-head {
+  padding-left: 20px;
+}
+#welc-head {
+  margin-top: 20px;
+}
+#reg-head,
+#log-head,
+#appay-head,
+#fp-head,
+#welc-head {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+#ps-head > a > p {
+  color: #007bff;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+}
+#close {
+  margin-top: 40px;
+}
+a {
+  text-decoration: none;
+}
+#area {
+  text-align: center;
+}
+#reg-img,
+#appay-img,
+#ps-img,
+#ps-form,
+#appay-form,
+#log-img,
+#reg-form,
+#log-form,
+#fp-form,
+#fp-img,
+#welc-details,
+#welc-img {
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+#reg-form,
+#appay-form,
+#ps-form,
+#log-form,
+#fp-form,
+#welc-details {
+  padding-top: 0px;
+}
+#reg-img > img,
+#appay-img > img,
+#ps-img > img,
+#log-img > img,
+#fp-img > img,
+#welc-img > img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+form {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+input,
+textarea,
+#reg-email,
+#log-email,
+#fp-email {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+}
+input {
+  padding-left: 20px;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+#fullname {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+}
+#firstname,
+#lastname {
+  width: 100%;
+}
+/* Date dropdown */
+#datedrop {
+  display: none;
+  width: 350px;
+  background-color: white;
+  margin-top: 15px;
+  position: absolute;
+  top: 350px;
+  z-index: 1000;
+  padding: 20px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+}
+#year-month {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+}
+select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+#day-title,
+#rw1,
+#rw2,
+#rw3,
+#rw4,
+#rw5 {
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+  grid-gap: 0.3%;
+  text-align: center;
+}
+#day-title > p {
+  font-size: small;
+  padding-top: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(107, 107, 107);
+  color: white;
+  border-radius: 5px;
+}
+#day > div {
+  height: 50px;
+}
+#rw1 > p,
+#rw2 > p,
+#rw3 > p,
+#rw4 > p,
+#rw5 > p {
+  padding-top: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+}
+.day-no:hover {
+  background-color: #1671d9;
+  color: white;
+}
+
+/* End */
+
+#cpassword {
+  margin-bottom: 20px;
+}
+#submit-btn {
+  margin-top: 20px;
+  background-color: #1671d9;
+  color: white;
+  font-weight: bold;
+}
+#submit-btn:hover {
+  background-color: #0056b3;
+}
+#forget-pw {
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+#forget-pw > a {
+  color: #1671d9;
+}
+#info {
+  margin-left: 20px;
+  font-weight: bold;
+}
+#wslogo {
+  width: fit-content;
+  margin: 30px auto 20px auto;
+}
+#wslogo-log {
+  width: fit-content;
+  margin: 250px auto 20px auto;
+}
+#welc-logo {
+  width: fit-content;
+  margin: 200px auto 20px auto;
+}
+#wslogo-fp {
+  width: fit-content;
+  margin: 400px auto 20px auto;
+}
+input::placeholder {
+  text-align: center;
+}
+
+/* Welcome */
+#sel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.button-container > a > .flexbtn {
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #b8babb;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+a > .flexbtn {
+  color: #007bff;
+}
+.flexbtn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+a > .flexbtn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.primary-button {
+  height: 50px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin: 50px 5% 20px 5%;
+  width: 90%;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+/* welc end */
+#active-pay {
+  background-color: #007bff;
+  height: 25px;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+.features {
+  position: absolute;
+  top: 120px;
+  left: 170px;
+}
+.payment-methods > img {
+  height: 25px;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#difa-logo {
+  width: fit-content;
+}
+.payment-methods > img:hover {
+  box-shadow: 2px 2px 6px 1px rgba(44, 44, 44, 0.5);
+}

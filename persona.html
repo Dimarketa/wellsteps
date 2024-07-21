@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize your Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="responsiveness.css">
+</head>
+
+<body>
+    <div id="ps-container">
+        <div id="ps-img">
+            <img src="Images/Register image.png" alt="register">
+        </div>
+        <div id="ps-form">
+            <form action="begin.html" method="get">
+                <div id="ps-head">
+                    <a href="welcome.html" id="skip">
+                        <p>Skip Now for Later</p>
+                    </a>
+                    <h1>A Little More For Better Personalized
+                        Experience...</h1>
+                </div>
+                <div class="ptitle">
+                    <p>Height</p>
+                    <div class="pinputs">
+                        <div>
+                            <select id="heightuint" class="pselect" name="height" id="sel-height">
+                                <option value="in">in</option>
+                                <option value="ft">ft</option>
+                                <option value="m">m</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number" step=".01" name="height" class="sel-persona">
+                        </div>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <p>Weight</p>
+                    <div class="pinputs">
+                        <div>
+                            <select id="weightunit" class="pselect" name="weight">
+                                <option value="Kg">Kg</option>
+                                <option value="g">g</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number" step=".01" name="weight" class="sel-persona">
+                        </div>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <p>Sugar Level</p>
+                    <div class="pinputs">
+                        <div>
+                            <select id="slunit" class="pselect" name="sugar-level">
+                                <option value="mg/Dl">mg/DL</option>
+                                <option value="mmol/L">mmol/L</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number" step=".01" name="sl" class="sel-persona">
+                        </div>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <p>Blood Pressure</p>
+                    <div class="pinputs">
+                        <div>
+                            <select id="bpunit" class="pselect" name="blood-pressure">
+                                <option value="mmHg">mmHg</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number" step=".01" name="bp" class="sel-persona">
+                        </div>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <p>Blood Cholestrol</p>
+                    <div class="pinputs">
+                        <div>
+                            <select id="bcunit" class="pselect" name="blood-cholestrol">
+                                <option value="mg/DL">mg/DL</option>
+                                <option value="mmol/L">mmol/L</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number" step=".01" name="bc" class="sel-persona">
+                        </div>
+                    </div>
+                </div>
+                <div id="sbtn">
+                    <input id="submit-btn" type="submit" value="Let's Begins">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="validate.js"></script>
+</body>
+
+</html>

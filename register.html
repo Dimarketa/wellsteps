@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="responsiveness.css">
+</head>
+
+<body>
+    <div id="reg-container">
+        <div id="reg-img">
+            <img src="Images/Register image.png" alt="register">
+        </div>
+        <div id="reg-form">
+            <form action="login.html" method="get">
+                <div id="reg-head">
+                    <h1>Register</h1>
+                    <a href="index.html"><img id="close" src="Images/hugeicons_cancel-01.png" alt="close"></a>
+                </div>
+                <div id="fullname">
+                    <div id="firstname">
+                        <p>First Name</p>
+                        <div>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                    </div>
+                    <div id="lastname">
+                        <p>Last Name</p>
+                        <div>
+                            <input type="text" name="lname" id="lname">
+                        </div>
+                    </div>
+                </div>
+                <div id="dob">
+                    <p>Date of Birth</p>
+                    <div>
+                        <input type="text" name="date" id="date" placeholder="--Select--" readonly>
+                    </div>
+                </div>
+                <div id="datedrop">
+                    <div id="year-month">
+                        <div id="year">
+                            <select name="year" id="select-year">
+                                <!-- Year options -->
+                            </select>
+                        </div>
+                        <div id="month">
+                            <select name="month" id="select-month">
+                                <!-- Month options -->
+                            </select>
+                        </div>
+                    </div>
+                    <div id="day">
+                        <div id="day-title">
+                            <p>SUN</p>
+                            <p>MON</p>
+                            <p>TUE</p>
+                            <p>WED</p>
+                            <p>THU</p>
+                            <p>FRI</p>
+                            <p>SAT</p>
+                        </div>
+                        <div id="rw1">
+                            <p class="day-no">1</p>
+                            <p class="day-no">2</p>
+                            <p class="day-no">3</p>
+                            <p class="day-no">4</p>
+                            <p class="day-no">5</p>
+                            <p class="day-no">6</p>
+                            <p class="day-no">7</p>
+                        </div>
+                        <div id="rw2">
+                            <p class="day-no">8</p>
+                            <p class="day-no">9</p>
+                            <p class="day-no">10</p>
+                            <p class="day-no">11</p>
+                            <p class="day-no">12</p>
+                            <p class="day-no">13</p>
+                            <p class="day-no">14</p>
+                        </div>
+                        <div id="rw3">
+                            <p class="day-no">15</p>
+                            <p class="day-no">16</p>
+                            <p class="day-no">17</p>
+                            <p class="day-no">18</p>
+                            <p class="day-no">19</p>
+                            <p class="day-no">20</p>
+                            <p class="day-no">21</p>
+                        </div>
+                        <div id="rw4">
+                            <p class="day-no">22</p>
+                            <p class="day-no">23</p>
+                            <p class="day-no">24</p>
+                            <p class="day-no">25</p>
+                            <p class="day-no">26</p>
+                            <p class="day-no">27</p>
+                            <p class="day-no">28</p>
+                        </div>
+                        <div id="rw5">
+                            <p class="day-no">29</p>
+                            <p class="day-no">30</p>
+                            <p class="day-no">31</p>
+                            <p class="day-no"></p>
+                            <p class="day-no"></p>
+                            <p class="day-no"></p>
+                            <p class="day-no"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mail">
+                    <p>Email Address</p>
+                    <input id="reg-email" type="email" name="email" id="email">
+                </div>
+                <div id="pw">
+                    <p>Password</p>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div id="cpw">
+                    <p>Confirmed Password</p>
+                    <input type="password" name="confirmed" id="cpassword">
+                </div>
+                <div id="sbtn">
+                    <input id="submit-btn" type="submit" value="Register with wellsteps">
+                </div>
+            </form>
+            <p id="info">Already have an account with us? <span id="lg"><b><a href="login.html">Login</a></b></span></p>
+            <div id="wslogo"><a href="index.html"><img src="Images/logo.png" alt=""></a></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="dateselection.js"></script>
+    <script src="validate.js"></script>
+</body>
+
+</html>

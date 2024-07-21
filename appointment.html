@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user-dashboard.css">
+    <link rel="stylesheet" href="responsiveness.css">
+</head>
+
+<body>
+    <div id="dash-container">
+        <div id="side-bar">
+            <div id="dash-logo">
+                <a href="index.html"><img src="Images/logo.png" alt="wellsteps logo"></a>
+            </div>
+            <div class="dash-menu active">
+                <a href="dashboard.html">
+                    <img src="Images/Left Content.png" alt="dashboard">
+                    <p>Dashboard</p>
+                </a>
+            </div>
+            <div class="dash-menu">
+                <a href="">
+                    <img src="Images/ri_progress-3-line.png" alt="track">
+                    <p>Track My treatment</p>
+                </a>
+            </div>
+            <div class="dash-menu">
+                <a href="consultant.html">
+                    <img src="Images/hugeicons_align-box-bottom-left.png" alt="consult">
+                    <p>Consult a Therapist</p>
+                </a>
+            </div>
+            <div class="dash-menu sb-active">
+                <a href="">
+                    <img src="Images/hugeicons_calendar-04.png" alt="appointment">
+                    <p>Appointment</p>
+                </a>
+            </div>
+            <div class="dash-menu">
+                <a href="">
+                    <img src="Images/Vector.png" alt="exercise">
+                    <p>Exercise Library</p>
+                </a>
+            </div>
+            <div class="dash-menu" id="com">
+                <a href="">
+                    <img src="Images/hugeicons_message-01.png" alt="communication">
+                    <p class="swift">Communication</p>
+                </a>
+                <div id="com-no">10</div>
+            </div>
+            <hr style="margin-bottom: 400px; width: 95%;">
+            <div class="dash-menu">
+                <a href="">
+                    <img src="Images/hugeicons_settings-01.png" alt="setting">
+                    <p>Setting</p>
+                </a>
+            </div>
+            <div class="dash-menu">
+                <a href="">
+                    <img src="Images/hugeicons_customer-support.png" alt="Help & Support">
+                    <p>Help & Support</p>
+                </a>
+            </div>
+            <div class="dash-menu">
+                <a href="">
+                    <img src="Images/hugeicons_gift.png" alt="Tell a Friend">
+                    <p>Tell a Friend</p>
+                </a>
+            </div>
+            <div id="sb-footer">
+                <div class="profile-pix">
+                    <img src="Images/Avatars (2).png" alt="profile logo" id="ft-profile-logo">
+                    <img src="Images/Avatar online indicator.png" alt="online" class="ponline">
+                </div>
+                <div id="profile">
+                    <p class="profile-name"><b>David Fayemi</b>
+                        <br><a href="" id="view"> View Profile
+                    </p></a>
+                </div>
+                <div id="exit-icon">
+                    <img src="Images/exit.png" alt="exit-icon">
+                </div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="display-head">
+                <div id="inp-bar">
+                    <img src="Images/Icon-left.png" alt="search icon">
+                    <input type="text" name="search" placeholder="Search here..." id="search">
+                </div>
+                <div id="logo-bg">
+                    <img src="Images/notification.png" alt="notification" id="notify">
+                </div>
+                <img src="Images/Avatars (2).png" alt="profile-logo" id="profile-logo">
+            </div>
+            <div class="my-appoint-head">
+                <p><b><span style="font-size: 1.5rem;">My Appointments </span></b><br>
+                    Review therapist based on your specific needs</p>
+                <div class="appoint-fbtn">
+                    <div class="appoint-namcount" id="app-focus">
+                        <div>All Appointments </div>
+                        <p class="appoint-count">0</p>
+                    </div>
+                    <div class="appoint-namcount">
+                        <div>Upcoming Appointments </div>
+                        <p class="appoint-count">0</p>
+                    </div>
+                    <div class="appoint-namcount">
+                        <div>Cancelled Appointments </div>
+                        <p class="appoint-count">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="appoint-list">
+                    <div class="shortbar">
+                        <p class="big filter-name"><b>All Appointments</b></p>
+                        <div class="small-gray filter-div">
+                            <img src="Images/Icon-left.png" alt="search icon" class="fb-icon">
+                            <p>Search</p>
+                        </div>
+                        <div class="small-gray filter-div">
+                            <img src="Images/filter-alt.png" alt="filter icon" class="fb-icon">
+                            <p>Filter</p>
+                        </div>
+                        <div class="small-gray filter-div">
+                            <img src="Images/icon 4.png" alt="sort-icon" class="fb-icon">
+                            <p>Sort</p>
+                        </div>
+                    </div>
+                    <div class="after-filter">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class=" check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div style="margin-top:25px; border-radius: 5px; width: 150px; background-color: #1671d9; color: white; height: 40px; vertical-align: middle; padding-top: 10px; padding-left: 20px; margin-left: auto; margin-right: auto;"
+                                class="physio-playrec">Play Recordings</div>
+                        </div>
+                        <hr class="hr-full">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class=" check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div style="margin-top:25px; border-radius: 5px; width: 150px; background-color: #1671d9; color: white; height: 40px; vertical-align: middle; padding-top: 10px; padding-left: 20px; margin-left: auto; margin-right: auto;"
+                                class="physio-playrec">Play Recordings</div>
+                        </div>
+                        <hr class="hr-full">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class="check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div style="margin-top:25px; border-radius: 5px; width: 150px; background-color: #1671d9; color: white; height: 40px; vertical-align: middle; padding-top: 10px; padding-left: 20px; margin-left: auto; margin-right: auto;"
+                                class="physio-playrec">Play Recordings</div>
+                        </div>
+                        <hr class="hr-full">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class=" check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div class="physio-details"></div>
+                        </div>
+                        <hr class="hr-full">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class=" check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div style="margin-top:25px; border-radius: 5px; width: 150px; background-color: #1671d9; color: white; height: 40px; vertical-align: middle; padding-top: 10px; padding-left: 20px; margin-left: auto; margin-right: auto;"
+                                class="physio-playrec">Play Recordings</div>
+                        </div>
+                        <hr class="hr-full">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class=" check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div class="physio-details"></div>
+                        </div>
+                        <hr class="hr-full">
+                        <div class="recent-list physio-rec">
+                            <div>
+                                <img style="width: 70px; height: 70px; margin-top: 10px;" src="Images/Image (14).png"
+                                    alt="physiotherapist" class="recent-icon physio">
+                                <img src="Images/check.png" alt="check icon" class="check">
+                            </div>
+                            <div class="recent-details physio-recdetails">
+                                <p class="medium" style="font-weight: bold;">Dr. Apelles Josiah
+                                    <br>
+                                    <span style="font-weight: lighter;" class="small-gray">General Practioner
+                                        <br>
+                                        6 Jun, 2024, 1hr 5min</span>
+                                </p>
+                            </div>
+                            <div style="margin-top:25px; border-radius: 5px; width: 150px; background-color: #1671d9; color: white; height: 40px; vertical-align: middle; padding-top: 10px; padding-left: 20px; margin-left: auto; margin-right: auto;"
+                                class="physio-playrec">Play Recordings</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appoint-calendar">
+                    <p class="big margin pad30">Calendar</p>
+                    <hr class="hr-full">
+
+                    <p style="text-align: center;" class="big margin calendar-mtyr"><span class="month">June</span>
+                        <span class="year">2024</span>
+                    </p>
+                    <div class="calendar-table">
+                        <table class="day">
+                            <thead style="font-weight: bold;">
+                                <td>Mo</td>
+                                <td>Tu</td>
+                                <td>We</td>
+                                <td>Th</td>
+                                <td>Fr</td>
+                                <td>Sa</td>
+                                <td>Su</td>
+                            </thead>
+                            <tr class="tb-row1">
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="appoint-day">1</td>
+                            </tr>
+                            <tr class="tb-row2">
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td class="Upcoming-appoint">6 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>7 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>8</td>
+                            </tr>
+                            <tr class="tb-row3">
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                            </tr>
+                            <tr class="tb-row4">
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>21</td>
+                                <td>22</td>
+                            </tr>
+                            <tr class="tb-row5">
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>26 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>27 <div class="appoint-scheduled"></div>
+                                </td>
+                                <td>28</td>
+                                <td>29</td>
+                            </tr>
+                            <tr class="tb-row6">
+                                <td>30</td>
+                                <td>31</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr class="hr-full">
+                    <div class="up-app">
+                        <div class="up-app-section">
+                            <p><b>Upcoming Appointment</b></p>
+                            <p class="small-gray">11.00 12.00 (1 hr)</p>
+                            <p class="medium" style="font-weight: bold;">Dr. Priscilla Paul</p>
+                            <div class="lin1">
+                                <img src="Images/hugeicons_link-02.png" alt="link-icon" class="u-icon">
+                                <p class="small-gray sm-up">meet.wellsteps.com/df-ws-dao</p>
+                            </div>
+                            <a href=""><button
+                                    style="width: 95%; margin-left: auto; margin-right: auto; height: 50px;">Begin
+                                    Session</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This will display when mobile view to switch to desktop view -->
+        <div class="popview-container">
+            <div class="popview">
+                <p class="big">This device-width is too small for this page, switch to desktop view</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

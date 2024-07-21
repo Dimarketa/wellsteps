@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #516780;
+            /* Adjusted to match the dark background */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px 60px;
+            background-color: white;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .container b {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .container .businessname,
+        .container .quest {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .connect,
+        .explore {
+            color: #007bff;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            font-family: "Arial", sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .begin-btn:hover {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        .connect:hover,
+        .explore:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                width: 80%;
+            }
+
+            .container b {
+                font-size: 20px;
+            }
+
+            .container .businessname,
+            .container .quest {
+                font-size: 14px;
+            }
+
+            .connect,
+            .explore {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <b>Your Journey To Wholeness Begins Today</b>
+        <p class="businessname">Hi Pilate, welcome to your Dashboard! We are excited to have you and are committed to
+            helping
+            you reach your wellness goal.</p>
+        <p class="quest">Which option would you like to explore first?</p>
+        <div class="button-container">
+            <a href="consultant.html" class="begin-btn"><button type="button" class="connect">Connect With A
+                    Therapist</button></a>
+            <a href="#" class="begin-btn"><button type="button" class="explore">Explore Our Exercise
+                    Library</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
